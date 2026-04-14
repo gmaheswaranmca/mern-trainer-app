@@ -1,5 +1,6 @@
 import {useState} from "react"
 import axios from "axios"
+import BASE_URL from "./../base.js"
 
 function AddTrainer(){
 
@@ -8,7 +9,7 @@ const [skills,setSkills] = useState("")
 
 const saveTrainer = async()=>{
 
-await axios.post("http://localhost:5000/trainer",{
+await axios.post(`${BASE_URL}/trainer`,{
 name,
 skills
 })

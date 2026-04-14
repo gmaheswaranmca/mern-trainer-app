@@ -1,5 +1,6 @@
 import {useEffect,useState} from "react"
 import axios from "axios"
+import BASE_URL from "./../base.js"
 
 function ListTrainer(){
 
@@ -7,7 +8,7 @@ const [trainers,setTrainers] = useState([])
 
 useEffect(()=>{
 
-axios.get("http://localhost:5000/trainers")
+axios.get(`${BASE_URL}/trainers`)
 .then(res=>setTrainers(res.data))
 
 },[])
