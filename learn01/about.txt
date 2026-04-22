@@ -1,0 +1,51 @@
+learning react js 
+nithin sir upskilling-brushing up
+
+what is react app?
+    single page app 
+        where: client/index.html
+        -> main.jsx
+            ? entry point of react app 
+            - write ui of "App" component into "root" div element
+    "App" component
+        - root of component tree 
+        - why it is component?
+            it contains 
+                > ui
+                > code 
+                > style 
+                > named image 
+    import in react component 
+        - import names from lib 
+        - give name to image path in assets or url
+        - import styles 
+Lab 1.1
+    - Removed all uis other than counter button 
+    - Removed all styles in App.css and index.css 
+    - Tried css3 styles for button class "counter"
+    - Removed css3 styles for "counter" button 
+    - Updated bootstrap styles for "counter" button 
+        - included cdn as link element into index.html 
+        - attached className to button 
+            as "btn btn-primary"
+            btn-secondary 
+            btn-dark
+            btn-info
+            btn-warning 
+            btn-success
+            btn-danger 
+Lab 1.2 
+    Move counter button to "Counter" component 
+    Then add "Counter" component to "App" component 
+
+    useState
+        hook: it is the connector bt state and component
+        state: changeable listenable data by comp 
+        - takes arg ie initial value 
+            - number
+            - str 
+            - object 
+            - array 
+        - returns two element array
+            - first element: readable state 
+            - second element: setter to set the state 
